@@ -40,6 +40,7 @@ printf("Area%f\n", area);
 printf("Pib%f\n", pib);
 printf("Pontos turisticos %d", pontos);
 
+return 0;
 
 
 
