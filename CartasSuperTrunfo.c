@@ -6,20 +6,20 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+//Densidade Populacional: População dividida pela área da cidade.
+//PIB per capita: PIB total dividido pela população.
+
 int main() {
   
- int cdc ;
- int populacao;
- int pontos;
- float area;
- float pib;
- char cidade[20];
+ int cdc, populacao, pontos;
+ float area, pib, densidade, pib2;
+ char nome[50];
  
 printf("Digite o codigo da cidade\n");
 scanf("%d" , &cdc);
 
 printf("Digite o nome da cidade\n");
-scanf("%s" , &cidade);
+scanf("%s" , &nome);
 
 printf("Digite o numero da populacao\n");
 scanf("%d" , &populacao);
@@ -30,18 +30,22 @@ scanf("%f" , &area);
 printf("Didite o numero de pontos turisticos\n");
 scanf("%d" , &pontos);
 
-printf("Digite o pib da cidade\n");
+printf("DIgite o pib total:\n");
 scanf("%f", &pib);
 
+densidade = populacao / area;
+pib2 = pib / populacao;
+
 printf("Codigo da cidade %d\n", cdc);
-printf("Nome da cidade %s\n",cidade);
+printf("Nome da cidade %s\n",nome);
 printf("Populacao %d\n", populacao);
-printf("Area%f\n", area);
-printf("Pib%f\n", pib);
-printf("Pontos turisticos %d", pontos);
+printf("Area %.3f\n", area);
+printf("Pib %.3f\n", pib);
+printf("Pontos turisticos %d \n", pontos);
+printf("Densidade populacional %.3f \n",densidade);
+printf("Pib per capita: %.3f", pib2);
 
 return 0;
-
 
 
 
