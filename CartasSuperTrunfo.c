@@ -87,13 +87,40 @@ printf("Pib per capita: %.3f \n", pib3);
 
 printf("Agora as cartas serao comparadas\n");
 if (populacao > populacao2) {
-    printf("A populacao da primeira cidade venceu");
+    printf("A populacao da carta %d venceu\n", cdc);
 }else {
-    printf("A populacao da segunda cidade venceu");
+    printf("A populacao da carta %d venceu\n", cdc2);
 }
-if (area)
-
-
+if (area > area2) {
+    printf("A area da carta %d venceu\n",cdc);
+}else {
+    printf("A area da carta %d venceu\n", cdc2);
+}
+if (pib > pib02) {
+    printf("O pib da carta %d venceu\n", cdc);
+}else{
+    printf("O pib da carta %d venceu\n", cdc2);
+}
+if(pontos > pontos2) {
+    printf("A carta %d tem mais pontos turisticos\n", cdc);
+}else{
+    printf("A carta %d tem mais pontos turisticos\n", cdc2);
+}
+if(densidade < densidade2){
+    printf("A densidade da carta %d venceu\n", cdc);
+}else{
+    printf("A densidade da carta %d venceu\n", cdc2);
+}
+if(pib2 > pib3){
+    printf("o pib per capita da carta %d venceu\n", cdc);
+}else{
+    printf("O pib per capita da carta %f venceu\n", cdc2);
+}
+if(populacao + area + pib + pontos + densidade + pib2 > populacao2 + area2 + pib02 + pontos2 + densidade2 + pib3 ){
+    printf("O super poder da carta %d venceu\n", cdc);
+}else{
+    printf("O super poder da carta %d venceu\n", cdc2);
+}
 return 0;
 
 
