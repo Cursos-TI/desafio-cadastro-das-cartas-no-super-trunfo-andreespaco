@@ -80,7 +80,7 @@ printf("Hora do duelo\n");
 
 printf("Carta 1 Codigo: %s - Estado: %s - Nome da cidade: %s - Populacao: %d\n", codigo1, estado1, cidade1, populacao1);
 printf("Carta 2 Codigo: %s - Estado: %s - Nome da cidade: %s - Populacao: %d\n", codigo2, estado2, cidade2, populacao2);
-if(populacao1 > populacao2){
+if(populacao1 < populacao2){
     printf("Carta 1 Venceu!\n");
 }else{
     printf("Carta 2 Venceu!\n");
@@ -125,8 +125,8 @@ printf("Carta 2 Codigo: %s - Estado: %s - Nome da cidade: %s - Super Poder: %f\n
 if (super > super2){
     printf("Carta 1 Venceu!\n");
 }else{
-    printf("Carta 2 Venceu!\n");
-}
+    printf("Carta 2 Venceu!\n"); 
+} 
 
 return 0;
 }   
