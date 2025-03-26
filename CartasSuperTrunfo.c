@@ -35,7 +35,7 @@ printf("Digite a area da cidade:");
 scanf("%f" , &area1);
 
 printf("Didite o numero de pontos turisticos:");
-scanf("%d" , &pontosT1);
+scanf("%d" , &pontosT1); 
 
 printf("DIgite o pib total:");
 scanf("%f", &pib1);
